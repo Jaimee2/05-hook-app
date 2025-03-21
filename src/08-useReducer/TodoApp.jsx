@@ -4,14 +4,16 @@ import TodoAdd from "./TodoAdd.jsx";
 import { useTodos } from "../hooks/useTodos.js";
 
 
-function TodoApp(props) {
+function TodoApp() {
 
-    const {todos, handleNewTodo, handleDeleteTodo, handleOnToggleTodo} = useTodos();
+    const {todos, todosCount, todosPending, handleNewTodo, handleDeleteTodo, handleOnToggleTodo} = useTodos();
 
     return (
         <div className="container-primary">
 
-            <h3 className="h3-primary text-center">Todo App (10) <span>Pending to: ()</span></h3>
+            <h3 className="h3-primary text-center">Todo App ({ todosCount })
+                <span>Pending to: ({ todosPending })</span>
+            </h3>
             <div className="flex flex-row justify-between mx-2">
 
                 <ul className="w-[600px] mx-10">

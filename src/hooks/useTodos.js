@@ -51,6 +51,8 @@ export const useTodos = () => {
     };
     return {
         todos,
+        todosCount: todos.length,
+        todosPending: todos.filter(todo => !todo.done).length,
         handleNewTodo,
         handleDeleteTodo,
         handleOnToggleTodo
