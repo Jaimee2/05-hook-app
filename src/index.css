@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+
+.btn-primary {
+    @apply m-2 py-2 px-5 bg-amber-200 rounded-2xl hover:bg-amber-300 transition duration-300;
+}
+
+.btn-delete {
+    @apply py-1 px-4 bg-red-300 rounded-2xl font-semibold m-1 hover:bg-red-400;
+}
+
+
+.h3-primary {
+    @apply p-5 text-xl font-semibold m-1
+}
+
+.container-primary {
+    @apply container mx-auto border border-amber-300 rounded-2xl m-4 p-4;
+}
+
+.input-primary {
+    @apply border rounded-lg p-2 m-2 border-amber-400;
+}
