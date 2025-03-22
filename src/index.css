@@ -9,7 +9,9 @@
     @apply py-1 px-4 bg-red-300 rounded-2xl font-semibold m-1 hover:bg-red-400;
 }
 
-
+.link-header {
+    @apply text-lg font-semibold border rounded-lg content-center py-3 px-5 my-2 hover:bg-amber-100;
+}
 .h3-primary {
     @apply p-5 text-xl font-semibold m-1
 }
